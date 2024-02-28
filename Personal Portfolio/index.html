@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d8fc05aef7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+               <nav>
+                <img src="image/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+               </nav> 
+               <div class="header-text">
+                <p>Software Engineer Graduate</p>
+                <h1>Hi, I'm <span>Rithick E</span><br>from SKCT </h1>
+               </div>
+        </div>
+    </div>
+        <!--------about------->
+       <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>👋 Hi, I'm Rithick E, a third-year Computer Science and Engineering student. Proficient in HTML, CSS, and JavaScript for web development, and skilled in Java, C++, SQL, Git/GitHub, and Excel. I enjoy problem-solving, have hands-on project experience, and am passionate about staying current with tech trends. Let's connect and explore the world of coding together!</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Devlopment</span><br>Web app development</li>
+                            <li><span>Java</span><br>Problem solving</li>
+                            <li><span>SQL</span><br>Database management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Dec 2023- Jan 2024</span><br>Front-end developer internship at Sofelit Solutions</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>B.E CSE</li>
+                            <li><span>2019-2021</span><br>High-School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------service------>
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>In the web design section, I present a collection of visually stunning websites that exemplify my creativity, attention to detail, and mastery of responsive design principles.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>SQL</h2>
+                    <p>In the web design section, I present a collection of visually stunning websites that exemplify my creativity, attention to detail, and mastery of responsive design principles.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Excel</h2>
+                    <p>In a dedicated segment, I showcase my proficiency in Excel, highlighting my skills in data analysis, spreadsheet modeling, and automation to streamline processes and drive informed decision-making.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------portfolio--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-1.png">
+                    <div class="layer">
+                        <h3>Online Food App</h3>
+                        <p>Designed and developed an efficient online food app, integrating data structures and algorithms to enhance order management and delivery efficiency. Implemented intuitive user interfaces and backend systems to ensure a seamless experience for customers. Utilized meticulous attention to detail to optimize performance and user satisfaction.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-2.png">
+                    <div class="layer">
+                        <h3>Book Management System</h3>
+                        <p>For the Book Management System project, I demonstrate my adeptness in creating intuitive interfaces, seamless database integration, and efficient book tracking mechanisms, underscoring my prowess in software development and project management.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-3.png">
+                    <div class="layer">
+                        <h3>Attendance Tracker System</h3>
+                        <p>
+                            The Attendance Tracker System project exemplifies my proficiency in developing scalable solutions for effective attendance management, emphasizing my ability to design intuitive interfaces and incorporate robust database functionality.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-------contact-------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left"> 
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>cseskct207rithick.e@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 7708873821</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="image/My CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-rigth">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>Copyright © 2024 Rithick. All rights reserved.</p>
+        </div>
+    </div>
+       <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+       </script>
+       <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+       </script>
+
+</body>
+</html>
